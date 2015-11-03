@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>376EEB56-573B-44C0-9A2D-288035CCFE92</string>
+	<key>IDESourceControlProjectName</key>
+	<string>KIAdditions</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>13890B229EF7EF31AA0D88922AC20270640BD802</key>
+		<string>github.com:smartwalle/KIAdditions.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>KIAdditions.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>13890B229EF7EF31AA0D88922AC20270640BD802</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:smartwalle/KIAdditions.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>13890B229EF7EF31AA0D88922AC20270640BD802</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>13890B229EF7EF31AA0D88922AC20270640BD802</string>
+			<key>IDESourceControlWCCName</key>
+			<string>KIAdditions</string>
+		</dict>
+	</array>
+</dict>
+</plist>

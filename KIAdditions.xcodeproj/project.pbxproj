@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1827D4771BE877CF009F3B9B /* NSBundle+KIAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1827D4761BE877CF009F3B9B /* NSBundle+KIAdditions.m */; };
 		18BD6DD61BE86B9400B8CBF9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD6DD51BE86B9400B8CBF9 /* main.m */; };
 		18BD6DD91BE86B9400B8CBF9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD6DD81BE86B9400B8CBF9 /* AppDelegate.m */; };
 		18BD6DDC1BE86B9400B8CBF9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD6DDB1BE86B9400B8CBF9 /* ViewController.m */; };
@@ -14,7 +15,6 @@
 		18BD6DE11BE86B9400B8CBF9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18BD6DE01BE86B9400B8CBF9 /* Images.xcassets */; };
 		18BD6DE41BE86B9400B8CBF9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18BD6DE21BE86B9400B8CBF9 /* LaunchScreen.xib */; };
 		18BD6DF01BE86B9400B8CBF9 /* KIAdditionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD6DEF1BE86B9400B8CBF9 /* KIAdditionsTests.m */; };
-		18BD6E331BE86B9F00B8CBF9 /* NSBundle+KIAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD6DFC1BE86B9F00B8CBF9 /* NSBundle+KIAdditions.m */; };
 		18BD6E341BE86B9F00B8CBF9 /* NSData+KIAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD6DFE1BE86B9F00B8CBF9 /* NSData+KIAdditions.m */; };
 		18BD6E351BE86B9F00B8CBF9 /* NSDate+KIAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD6E001BE86B9F00B8CBF9 /* NSDate+KIAdditions.m */; };
 		18BD6E361BE86B9F00B8CBF9 /* NSDictionary+KIAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD6E021BE86B9F00B8CBF9 /* NSDictionary+KIAdditions.m */; };
@@ -51,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1827D4751BE877CF009F3B9B /* NSBundle+KIAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+KIAdditions.h"; sourceTree = "<group>"; };
+		1827D4761BE877CF009F3B9B /* NSBundle+KIAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+KIAdditions.m"; sourceTree = "<group>"; };
 		18BD6DD01BE86B9400B8CBF9 /* KIAdditions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KIAdditions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18BD6DD41BE86B9400B8CBF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18BD6DD51BE86B9400B8CBF9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -64,8 +66,6 @@
 		18BD6DE91BE86B9400B8CBF9 /* KIAdditionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KIAdditionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18BD6DEE1BE86B9400B8CBF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18BD6DEF1BE86B9400B8CBF9 /* KIAdditionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIAdditionsTests.m; sourceTree = "<group>"; };
-		18BD6DFB1BE86B9F00B8CBF9 /* NSBundle+KIAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+KIAdditions.h"; sourceTree = "<group>"; };
-		18BD6DFC1BE86B9F00B8CBF9 /* NSBundle+KIAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+KIAdditions.m"; sourceTree = "<group>"; };
 		18BD6DFD1BE86B9F00B8CBF9 /* NSData+KIAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+KIAdditions.h"; sourceTree = "<group>"; };
 		18BD6DFE1BE86B9F00B8CBF9 /* NSData+KIAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+KIAdditions.m"; sourceTree = "<group>"; };
 		18BD6DFF1BE86B9F00B8CBF9 /* NSDate+KIAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+KIAdditions.h"; sourceTree = "<group>"; };
@@ -132,6 +132,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1827D4741BE877CF009F3B9B /* NSBundle */ = {
+			isa = PBXGroup;
+			children = (
+				1827D4751BE877CF009F3B9B /* NSBundle+KIAdditions.h */,
+				1827D4761BE877CF009F3B9B /* NSBundle+KIAdditions.m */,
+			);
+			path = NSBundle;
+			sourceTree = "<group>";
+		};
 		18BD6DC71BE86B9400B8CBF9 = {
 			isa = PBXGroup;
 			children = (
@@ -195,8 +204,7 @@
 		18BD6DF91BE86B9F00B8CBF9 /* KIAdditions */ = {
 			isa = PBXGroup;
 			children = (
-				18BD6DFB1BE86B9F00B8CBF9 /* NSBundle+KIAdditions.h */,
-				18BD6DFC1BE86B9F00B8CBF9 /* NSBundle+KIAdditions.m */,
+				1827D4741BE877CF009F3B9B /* NSBundle */,
 				18BD6DFD1BE86B9F00B8CBF9 /* NSData+KIAdditions.h */,
 				18BD6DFE1BE86B9F00B8CBF9 /* NSData+KIAdditions.m */,
 				18BD6DFF1BE86B9F00B8CBF9 /* NSDate+KIAdditions.h */,
@@ -351,6 +359,7 @@
 				18BD6E371BE86B9F00B8CBF9 /* NSFileManager+KIAdditions.m in Sources */,
 				18BD6E351BE86B9F00B8CBF9 /* NSDate+KIAdditions.m in Sources */,
 				18BD6DDC1BE86B9400B8CBF9 /* ViewController.m in Sources */,
+				1827D4771BE877CF009F3B9B /* NSBundle+KIAdditions.m in Sources */,
 				18BD6E401BE86B9F00B8CBF9 /* UIImage+KIAdditions.m in Sources */,
 				18BD6E4A1BE86B9F00B8CBF9 /* UIView+KIAdditions.m in Sources */,
 				18BD6E421BE86B9F00B8CBF9 /* UINavigationBar+KIAdditions.m in Sources */,
@@ -372,7 +381,6 @@
 				18BD6E3C1BE86B9F00B8CBF9 /* NSUserDefaults+KIAdditions.m in Sources */,
 				18BD6E361BE86B9F00B8CBF9 /* NSDictionary+KIAdditions.m in Sources */,
 				18BD6E3F1BE86B9F00B8CBF9 /* UIDevice+KIAdditions.m in Sources */,
-				18BD6E331BE86B9F00B8CBF9 /* NSBundle+KIAdditions.m in Sources */,
 				18BD6DD61BE86B9400B8CBF9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -564,6 +572,7 @@
 				18BD6DF51BE86B9400B8CBF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18BD6DF61BE86B9400B8CBF9 /* Build configuration list for PBXNativeTarget "KIAdditionsTests" */ = {
 			isa = XCConfigurationList;
@@ -572,6 +581,7 @@
 				18BD6DF81BE86B9400B8CBF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
