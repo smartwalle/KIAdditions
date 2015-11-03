@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author       = { "SmartWalle" => "smartwalle@gmail.com" }
   s.platform     = :ios
-  s.source       = { :git => "https://github.com/smartwalle/KIAdditions.git", :branch => "master" }
+  s.source       = { :git => "https://github.com/smartwalle/KIAdditions.git", :branch => "master", :submodules => true }
   s.source_files  = "KIAdditions/KIAdditions/*.{h,m}"
   s.exclude_files = "Classes/Exclude"
 
@@ -26,7 +26,6 @@ Pod::Spec.new do |s|
 
   s.subspec 'NSData' do |ss|
     ss.source_files  = "KIAdditions/KIAdditions/NSData+KIAdditions.{h,m}"
-    ss.library       = "CommonCrypto"
   end
 
   s.subspec 'NSDate' do |ss|
@@ -59,7 +58,6 @@ Pod::Spec.new do |s|
 
   s.subspec 'NSString' do |ss|
     ss.source_files  = "KIAdditions/KIAdditions/NSString+KIAdditions.{h,m}"
-    ss.library       = "CommonCrypto"
     ss.dependency 'KIAdditions/NSData'
   end
 
