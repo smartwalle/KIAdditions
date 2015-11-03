@@ -25,91 +25,91 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'NSData' do |ss|
-    ss.source_files  = "KIAdditions/KIAdditions/NSData+KIAdditions.{h,m}"
+    ss.source_files  = "KIAdditions/KIAdditions/NSData/NSData+KIAdditions.{h,m}"
   end
 
   s.subspec 'NSDate' do |ss|
-    ss.source_files  = "KIAdditions/KIAdditions/NSDate+KIAdditions.{h,m}"
+    ss.source_files  = "KIAdditions/KIAdditions/NSDate/NSDate+KIAdditions.{h,m}"
   end
 
   s.subspec 'NSDictionary' do |ss|
-    ss.source_files  = "KIAdditions/KIAdditions/NSDictionary+KIAdditions.{h,m}"
+    ss.source_files  = "KIAdditions/KIAdditions/NSDictionary/NSDictionary+KIAdditions.{h,m}"
   end
 
   s.subspec 'NSFileManager' do |ss|
-    ss.source_files  = "KIAdditions/KIAdditions/NSFileManager+KIAdditions.{h,m}"
+    ss.source_files  = "KIAdditions/KIAdditions/NSFileManager/NSFileManager+KIAdditions.{h,m}"
     ss.dependency 'KIAdditions/NSBundle'
   end
 
   s.subspec 'NSLayoutConstraint' do |ss|
-    ss.source_files  = "KIAdditions/KIAdditions/NSLayoutConstraint+KIAdditions.{h,m}"
+    ss.source_files  = "KIAdditions/KIAdditions/NSLayoutConstraint/NSLayoutConstraint+KIAdditions.{h,m}"
     ss.framework     = "UIKit"
   end
 
   s.subspec 'NSMutableDictionary' do |ss|
-    ss.source_files  = "KIAdditions/KIAdditions/NSMutableDictionary+KIAdditions.{h,m}"
+    ss.source_files  = "KIAdditions/KIAdditions/NSMutableDictionary/NSMutableDictionary+KIAdditions.{h,m}"
   end
 
   s.subspec 'NSObject' do |ss|
-    ss.source_files  = "KIAdditions/KIAdditions/NSObject+KIAdditions.{h,m}"
+    ss.source_files  = "KIAdditions/KIAdditions/NSObject/NSObject+KIAdditions.{h,m}"
     ss.framework     = "UIKit"
     ss.dependency 'KIAdditions/NSData'
   end
 
   s.subspec 'NSString' do |ss|
-    ss.source_files  = "KIAdditions/KIAdditions/NSString+KIAdditions.{h,m}"
+    ss.source_files  = "KIAdditions/KIAdditions/NSString/NSString+KIAdditions.{h,m}"
     ss.dependency 'KIAdditions/NSData'
   end
 
   s.subspec 'NSUserDefaults' do |ss|
-    ss.source_files  = "KIAdditions/KIAdditions/NSUserDefaults+KIAdditions.{h,m}"
+    ss.source_files  = "KIAdditions/KIAdditions/NSUserDefaults/NSUserDefaults+KIAdditions.{h,m}"
   end
 
   s.subspec 'UIButton' do |ss|
-    ss.source_files  = "KIAdditions/KIAdditions/UIButton+KIAdditions.{h,m}"
+    ss.source_files  = "KIAdditions/KIAdditions/UIButton/UIButton+KIAdditions.{h,m}"
     ss.framework     = "UIKit"
   end
 
   s.subspec 'UIColor' do |ss|
-    ss.source_files  = "KIAdditions/KIAdditions/UIColor+KIAdditions.{h,m}"
+    ss.source_files  = "KIAdditions/KIAdditions/UIColor/UIColor+KIAdditions.{h,m}"
     ss.framework     = "UIKit"
   end
 
   s.subspec 'UIDevice' do |ss|
-    ss.source_files  = "KIAdditions/KIAdditions/UIDevice+KIAdditions.{h,m}"
+    ss.source_files  = "KIAdditions/KIAdditions/UIDevice/UIDevice+KIAdditions.{h,m}"
     ss.frameworks    = "UIKit", "AudioToolbox", "SystemConfiguration"
   end
 
   s.subspec 'UIImage' do |ss|
-    ss.source_files  = "KIAdditions/KIAdditions/UIImage+KIAdditions.{h,m}"
+    ss.source_files  = "KIAdditions/KIAdditions/UIImage/UIImage+KIAdditions.{h,m}"
     ss.frameworks    = "UIKit", "Accelerate", "QuartzCore"
   end
 
   s.subspec 'UIView' do |ss|
-    ss.source_files  = "KIAdditions/KIAdditions/UIView+KIAdditions.{h,m}"
+    ss.source_files  = "KIAdditions/KIAdditions/UIView/UIView+KIAdditions.{h,m}"
     ss.framework     = "QuartzCore"
   end
 
   s.subspec 'UIImageView' do |ss|
-    ss.source_files  = "KIAdditions/KIAdditions/UIImageView+KIAdditions.{h,m}"
+    ss.source_files  = "KIAdditions/KIAdditions/UIImageView/UIImageView+KIAdditions.{h,m}"
     ss.framework     = "UIKit"
     ss.dependency 'KIAdditions/UIView'
     ss.dependency 'KIAdditions/UIImage'
   end
 
   s.subspec 'UINavigationBar' do |ss|
-    ss.source_files  = "KIAdditions/KIAdditions/UINavigationBar+KIAdditions.{h,m}"
+    ss.source_files  = "KIAdditions/KIAdditions/UINavigationBar/UINavigationBar+KIAdditions.{h,m}"
     ss.framework     = "UIKit"
     ss.dependency 'KIAdditions/UIDevice'
   end
 
   s.subspec 'UINavigationController' do |ss|
-    ss.source_files  = "KIAdditions/KIAdditions/UINavigationController+KIAdditions.{h,m}"
+    ss.source_files  = "KIAdditions/KIAdditions/UINavigationController/UINavigationController+KIAdditions.{h,m}"
     ss.framework     = "UIKit"
   end
 
   s.subspec 'UIScreen' do |ss|
-    ss.source_files  = "KIAdditions/KIAdditions/UIScreen+KIAdditions.{h,m}"
+    ss.source_files  = "KIAdditions/KIAdditions/UIScreen/UIScreen+KIAdditions.{h,m}"
     ss.framework     = "UIKit"
   end
 
