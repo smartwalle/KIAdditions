@@ -114,28 +114,28 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'UITableView' do |ss|
-    ss.source_files  = "KIAdditions/KIAdditions/UITableView+KIAdditions.{h,m}"
+    ss.source_files  = "KIAdditions/KIAdditions/UITableView/UITableView+KIAdditions.{h,m}"
     ss.framework     = "UIKit"
   end
 
   s.subspec 'UITableViewCell' do |ss|
-    ss.source_files  = "KIAdditions/KIAdditions/UITableViewCell+KIAdditions.{h,m}"
+    ss.source_files  = "KIAdditions/KIAdditions/UITableViewCell/UITableViewCell+KIAdditions.{h,m}"
     ss.framework     = "UIKit"
   end
 
   s.subspec 'UITableViewController' do |ss|
-    ss.source_files  = "KIAdditions/KIAdditions/UITableViewController+KIAdditions.{h,m}"
+    ss.source_files  = "KIAdditions/KIAdditions/UITableViewController/UITableViewController+KIAdditions.{h,m}"
     ss.framework     = "UIKit"
      ss.dependency 'KIAdditions/UITableView'
   end
 
   s.subspec 'UITextField' do |ss|
-    ss.source_files  = "KIAdditions/KIAdditions/UITextField+KIAdditions.{h,m}"
+    ss.source_files  = "KIAdditions/KIAdditions/UITextField/UITextField+KIAdditions.{h,m}"
     ss.framework     = "UIKit"
   end
 
   s.subspec 'UIViewController' do |ss|
-    ss.source_files  = "KIAdditions/KIAdditions/UIViewController+KIAdditions.{h,m}"
+    ss.source_files  = "KIAdditions/KIAdditions/UIViewController/UIViewController+KIAdditions.{h,m}"
     ss.framework     = "UIKit"
   end
 
