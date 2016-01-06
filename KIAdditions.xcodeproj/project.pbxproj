@@ -38,6 +38,7 @@
 		18BD6DE11BE86B9400B8CBF9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18BD6DE01BE86B9400B8CBF9 /* Images.xcassets */; };
 		18BD6DE41BE86B9400B8CBF9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18BD6DE21BE86B9400B8CBF9 /* LaunchScreen.xib */; };
 		18BD6DF01BE86B9400B8CBF9 /* KIAdditionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD6DEF1BE86B9400B8CBF9 /* KIAdditionsTests.m */; };
+		18F873A41C3D0C3800AC9C6B /* UICollectionViewCell+KIAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F873A31C3D0C3800AC9C6B /* UICollectionViewCell+KIAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +113,8 @@
 		18BD6DE91BE86B9400B8CBF9 /* KIAdditionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KIAdditionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18BD6DEE1BE86B9400B8CBF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18BD6DEF1BE86B9400B8CBF9 /* KIAdditionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIAdditionsTests.m; sourceTree = "<group>"; };
+		18F873A21C3D0C3800AC9C6B /* UICollectionViewCell+KIAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+KIAdditions.h"; sourceTree = "<group>"; };
+		18F873A31C3D0C3800AC9C6B /* UICollectionViewCell+KIAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+KIAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +138,7 @@
 		1827D4781BE87995009F3B9B /* KIAdditions */ = {
 			isa = PBXGroup;
 			children = (
+				18F873A11C3D0C1500AC9C6B /* UICollectionViewCell */,
 				1827D4791BE87995009F3B9B /* NSBundle */,
 				1827D47C1BE87995009F3B9B /* NSData */,
 				1827D47F1BE87995009F3B9B /* NSDate */,
@@ -439,6 +443,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		18F873A11C3D0C1500AC9C6B /* UICollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				18F873A21C3D0C3800AC9C6B /* UICollectionViewCell+KIAdditions.h */,
+				18F873A31C3D0C3800AC9C6B /* UICollectionViewCell+KIAdditions.m */,
+			);
+			path = UICollectionViewCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -551,6 +564,7 @@
 				1827D4CC1BE87995009F3B9B /* UIColor+KIAdditions.m in Sources */,
 				1827D4D51BE87995009F3B9B /* UITableViewController+KIAdditions.m in Sources */,
 				1827D4D21BE87995009F3B9B /* UIScreen+KIAdditions.m in Sources */,
+				18F873A41C3D0C3800AC9C6B /* UICollectionViewCell+KIAdditions.m in Sources */,
 				18BD6DD91BE86B9400B8CBF9 /* AppDelegate.m in Sources */,
 				1827D4CB1BE87995009F3B9B /* UIButton+KIAdditions.m in Sources */,
 				1827D4C71BE87995009F3B9B /* NSMutableDictionary+KIAdditions.m in Sources */,
