@@ -22,4 +22,6 @@
 
 - (void)colorComponents:(CGFloat[4])components;
 
+- (NSString *)hexString;
+
 @end

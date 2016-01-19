@@ -29,9 +29,9 @@
 
 - (void)observeNotification:(NSString *)name selector:(SEL)selector object:(id)object;
 
-- (void)observeNotification:(NSString *)name block:(void (^)(NSNotification *noti))block;
+- (id)observeNotification:(NSString *)name block:(void (^)(NSNotification *noti))block;
 
-- (void)observeNotification:(NSString *)name queue:(NSOperationQueue *)queue block:(void (^)(NSNotification *noti))block;
+- (id)observeNotification:(NSString *)name queue:(NSOperationQueue *)queue block:(void (^)(NSNotification *noti))block;
 
 - (void)unobserveNotification:(NSString *)name;
 

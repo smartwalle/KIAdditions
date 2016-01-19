@@ -37,23 +37,22 @@
                                                object:object];
 }
 
-- (void)observeNotification:(NSString *)name block:(void (^)(NSNotification *noti))block {
-    [self observeNotification:name queue:[NSOperationQueue mainQueue] block:block];
+- (id)observeNotification:(NSString *)name block:(void (^)(NSNotification *noti))block {
+    return [self observeNotification:name queue:[NSOperationQueue mainQueue] block:block];
 }
 
-- (void)observeNotification:(NSString *)name queue:(NSOperationQueue *)queue block:(void (^)(NSNotification *noti))block {
-    [self observeNotification:name object:nil queue:queue block:block];
+- (id)observeNotification:(NSString *)name queue:(NSOperationQueue *)queue block:(void (^)(NSNotification *noti))block {
+    return [self observeNotification:name object:nil queue:queue block:block];
 }
 
-- (void)observeNotification:(NSString *)name
+- (id)observeNotification:(NSString *)name
                      object:(id)object
                       queue:(NSOperationQueue *)queue
                       block:(void (^)(NSNotification *note))block {
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:name object:nil];
-    [[NSNotificationCenter defaultCenter] addObserverForName:name
-                                                      object:object
-                                                       queue:queue
-                                                  usingBlock:block];
+    return [[NSNotificationCenter defaultCenter] addObserverForName:name
+                                                             object:object
+                                                              queue:queue
+                                                         usingBlock:block];
 }
 
 - (void)unobserveNotification:(NSString *)name {
