@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UIView+KIAdditions.h"
 #import "UIImage+KIAdditions.h"
 
 typedef enum {

@@ -29,7 +29,6 @@
 		1827D4D41BE87995009F3B9B /* UITableViewCell+KIAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1827D4B41BE87995009F3B9B /* UITableViewCell+KIAdditions.m */; };
 		1827D4D51BE87995009F3B9B /* UITableViewController+KIAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1827D4B71BE87995009F3B9B /* UITableViewController+KIAdditions.m */; };
 		1827D4D61BE87995009F3B9B /* UITextField+KIAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1827D4BA1BE87995009F3B9B /* UITextField+KIAdditions.m */; };
-		1827D4D71BE87995009F3B9B /* UIView+KIAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1827D4BD1BE87995009F3B9B /* UIView+KIAdditions.m */; };
 		1827D4D81BE87995009F3B9B /* UIViewController+KIAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1827D4C01BE87995009F3B9B /* UIViewController+KIAdditions.m */; };
 		18BD6DD61BE86B9400B8CBF9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD6DD51BE86B9400B8CBF9 /* main.m */; };
 		18BD6DD91BE86B9400B8CBF9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD6DD81BE86B9400B8CBF9 /* AppDelegate.m */; };
@@ -96,8 +95,6 @@
 		1827D4B71BE87995009F3B9B /* UITableViewController+KIAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewController+KIAdditions.m"; sourceTree = "<group>"; };
 		1827D4B91BE87995009F3B9B /* UITextField+KIAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+KIAdditions.h"; sourceTree = "<group>"; };
 		1827D4BA1BE87995009F3B9B /* UITextField+KIAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+KIAdditions.m"; sourceTree = "<group>"; };
-		1827D4BC1BE87995009F3B9B /* UIView+KIAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+KIAdditions.h"; sourceTree = "<group>"; };
-		1827D4BD1BE87995009F3B9B /* UIView+KIAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+KIAdditions.m"; sourceTree = "<group>"; };
 		1827D4BF1BE87995009F3B9B /* UIViewController+KIAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+KIAdditions.h"; sourceTree = "<group>"; };
 		1827D4C01BE87995009F3B9B /* UIViewController+KIAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+KIAdditions.m"; sourceTree = "<group>"; };
 		18BD6DD01BE86B9400B8CBF9 /* KIAdditions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KIAdditions.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,7 +158,6 @@
 				1827D4B21BE87995009F3B9B /* UITableViewCell */,
 				1827D4B51BE87995009F3B9B /* UITableViewController */,
 				1827D4B81BE87995009F3B9B /* UITextField */,
-				1827D4BB1BE87995009F3B9B /* UIView */,
 				1827D4BE1BE87995009F3B9B /* UIViewController */,
 			);
 			path = KIAdditions;
@@ -365,15 +361,6 @@
 			path = UITextField;
 			sourceTree = "<group>";
 		};
-		1827D4BB1BE87995009F3B9B /* UIView */ = {
-			isa = PBXGroup;
-			children = (
-				1827D4BC1BE87995009F3B9B /* UIView+KIAdditions.h */,
-				1827D4BD1BE87995009F3B9B /* UIView+KIAdditions.m */,
-			);
-			path = UIView;
-			sourceTree = "<group>";
-		};
 		1827D4BE1BE87995009F3B9B /* UIViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -554,7 +541,6 @@
 			files = (
 				1827D4CF1BE87995009F3B9B /* UIImageView+KIAdditions.m in Sources */,
 				1827D4C51BE87995009F3B9B /* NSFileManager+KIAdditions.m in Sources */,
-				1827D4D71BE87995009F3B9B /* UIView+KIAdditions.m in Sources */,
 				1827D4C31BE87995009F3B9B /* NSDate+KIAdditions.m in Sources */,
 				18BD6DDC1BE86B9400B8CBF9 /* ViewController.m in Sources */,
 				1827D4D41BE87995009F3B9B /* UITableViewCell+KIAdditions.m in Sources */,
