@@ -21,7 +21,6 @@
 		1827D4CC1BE87995009F3B9B /* UIColor+KIAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1827D49C1BE87995009F3B9B /* UIColor+KIAdditions.m */; };
 		1827D4CD1BE87995009F3B9B /* UIDevice+KIAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1827D49F1BE87995009F3B9B /* UIDevice+KIAdditions.m */; };
 		1827D4CE1BE87995009F3B9B /* UIImage+KIAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1827D4A21BE87995009F3B9B /* UIImage+KIAdditions.m */; };
-		1827D4CF1BE87995009F3B9B /* UIImageView+KIAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1827D4A51BE87995009F3B9B /* UIImageView+KIAdditions.m */; };
 		1827D4D01BE87995009F3B9B /* UINavigationBar+KIAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1827D4A81BE87995009F3B9B /* UINavigationBar+KIAdditions.m */; };
 		1827D4D11BE87995009F3B9B /* UINavigationController+KIAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1827D4AB1BE87995009F3B9B /* UINavigationController+KIAdditions.m */; };
 		1827D4D21BE87995009F3B9B /* UIScreen+KIAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1827D4AE1BE87995009F3B9B /* UIScreen+KIAdditions.m */; };
@@ -79,8 +78,6 @@
 		1827D49F1BE87995009F3B9B /* UIDevice+KIAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+KIAdditions.m"; sourceTree = "<group>"; };
 		1827D4A11BE87995009F3B9B /* UIImage+KIAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+KIAdditions.h"; sourceTree = "<group>"; };
 		1827D4A21BE87995009F3B9B /* UIImage+KIAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+KIAdditions.m"; sourceTree = "<group>"; };
-		1827D4A41BE87995009F3B9B /* UIImageView+KIAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+KIAdditions.h"; sourceTree = "<group>"; };
-		1827D4A51BE87995009F3B9B /* UIImageView+KIAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+KIAdditions.m"; sourceTree = "<group>"; };
 		1827D4A71BE87995009F3B9B /* UINavigationBar+KIAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+KIAdditions.h"; sourceTree = "<group>"; };
 		1827D4A81BE87995009F3B9B /* UINavigationBar+KIAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+KIAdditions.m"; sourceTree = "<group>"; };
 		1827D4AA1BE87995009F3B9B /* UINavigationController+KIAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+KIAdditions.h"; sourceTree = "<group>"; };
@@ -150,7 +147,6 @@
 				1827D49A1BE87995009F3B9B /* UIColor */,
 				1827D49D1BE87995009F3B9B /* UIDevice */,
 				1827D4A01BE87995009F3B9B /* UIImage */,
-				1827D4A31BE87995009F3B9B /* UIImageView */,
 				1827D4A61BE87995009F3B9B /* UINavigationBar */,
 				1827D4A91BE87995009F3B9B /* UINavigationController */,
 				1827D4AC1BE87995009F3B9B /* UIScreen */,
@@ -287,15 +283,6 @@
 				1827D4A21BE87995009F3B9B /* UIImage+KIAdditions.m */,
 			);
 			path = UIImage;
-			sourceTree = "<group>";
-		};
-		1827D4A31BE87995009F3B9B /* UIImageView */ = {
-			isa = PBXGroup;
-			children = (
-				1827D4A41BE87995009F3B9B /* UIImageView+KIAdditions.h */,
-				1827D4A51BE87995009F3B9B /* UIImageView+KIAdditions.m */,
-			);
-			path = UIImageView;
 			sourceTree = "<group>";
 		};
 		1827D4A61BE87995009F3B9B /* UINavigationBar */ = {
@@ -539,7 +526,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1827D4CF1BE87995009F3B9B /* UIImageView+KIAdditions.m in Sources */,
 				1827D4C51BE87995009F3B9B /* NSFileManager+KIAdditions.m in Sources */,
 				1827D4C31BE87995009F3B9B /* NSDate+KIAdditions.m in Sources */,
 				18BD6DDC1BE86B9400B8CBF9 /* ViewController.m in Sources */,

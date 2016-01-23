@@ -85,13 +85,6 @@ Pod::Spec.new do |s|
     ss.frameworks    = "UIKit", "Accelerate", "QuartzCore"
   end
 
-  s.subspec 'UIImageView' do |ss|
-    ss.source_files  = "KIAdditions/KIAdditions/UIImageView/UIImageView+KIAdditions.{h,m}"
-    ss.framework     = "UIKit"
-    ss.dependency 'KIAdditions/UIView'
-    ss.dependency 'KIAdditions/UIImage'
-  end
-
   s.subspec 'UINavigationBar' do |ss|
     ss.source_files  = "KIAdditions/KIAdditions/UINavigationBar/UINavigationBar+KIAdditions.{h,m}"
     ss.framework     = "UIKit"
