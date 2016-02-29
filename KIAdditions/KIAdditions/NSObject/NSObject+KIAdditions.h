@@ -11,6 +11,8 @@
 
 #define kNotificationObject @"kNotificationObject"
 
+#define KIWeakSelf(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+
 @interface NSObject (KIAdditions)
 
 /*md5 加密*/
