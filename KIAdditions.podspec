@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "KIAdditions"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "KIAdditions"
 
   s.description  = <<-DESC
@@ -124,6 +124,11 @@ Pod::Spec.new do |s|
 
   s.subspec 'UIViewController' do |ss|
     ss.source_files  = "KIAdditions/KIAdditions/UIViewController/UIViewController+KIAdditions.{h,m}"
+    ss.framework     = "UIKit"
+  end
+
+  s.subspec 'UICollectionView' do |ss|
+    ss.source_files  = "KIAdditions/KIAdditions/UICollectionView/UICollectionView+KIAdditions.{h,m}"
     ss.framework     = "UIKit"
   end
 

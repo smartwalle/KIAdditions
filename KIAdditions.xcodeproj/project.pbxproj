@@ -29,6 +29,7 @@
 		1827D4D51BE87995009F3B9B /* UITableViewController+KIAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1827D4B71BE87995009F3B9B /* UITableViewController+KIAdditions.m */; };
 		1827D4D61BE87995009F3B9B /* UITextField+KIAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1827D4BA1BE87995009F3B9B /* UITextField+KIAdditions.m */; };
 		1827D4D81BE87995009F3B9B /* UIViewController+KIAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1827D4C01BE87995009F3B9B /* UIViewController+KIAdditions.m */; };
+		1895C2851C851836003ED1D3 /* UICollectionView+KIAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1895C2841C851836003ED1D3 /* UICollectionView+KIAdditions.m */; };
 		18BD6DD61BE86B9400B8CBF9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD6DD51BE86B9400B8CBF9 /* main.m */; };
 		18BD6DD91BE86B9400B8CBF9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD6DD81BE86B9400B8CBF9 /* AppDelegate.m */; };
 		18BD6DDC1BE86B9400B8CBF9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD6DDB1BE86B9400B8CBF9 /* ViewController.m */; };
@@ -94,6 +95,8 @@
 		1827D4BA1BE87995009F3B9B /* UITextField+KIAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+KIAdditions.m"; sourceTree = "<group>"; };
 		1827D4BF1BE87995009F3B9B /* UIViewController+KIAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+KIAdditions.h"; sourceTree = "<group>"; };
 		1827D4C01BE87995009F3B9B /* UIViewController+KIAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+KIAdditions.m"; sourceTree = "<group>"; };
+		1895C2831C851836003ED1D3 /* UICollectionView+KIAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+KIAdditions.h"; sourceTree = "<group>"; };
+		1895C2841C851836003ED1D3 /* UICollectionView+KIAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+KIAdditions.m"; sourceTree = "<group>"; };
 		18BD6DD01BE86B9400B8CBF9 /* KIAdditions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KIAdditions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18BD6DD41BE86B9400B8CBF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18BD6DD51BE86B9400B8CBF9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -132,6 +135,7 @@
 		1827D4781BE87995009F3B9B /* KIAdditions */ = {
 			isa = PBXGroup;
 			children = (
+				1895C27F1C8517F8003ED1D3 /* UICollectionView */,
 				18F873A11C3D0C1500AC9C6B /* UICollectionViewCell */,
 				1827D4791BE87995009F3B9B /* NSBundle */,
 				1827D47C1BE87995009F3B9B /* NSData */,
@@ -357,6 +361,15 @@
 			path = UIViewController;
 			sourceTree = "<group>";
 		};
+		1895C27F1C8517F8003ED1D3 /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				1895C2831C851836003ED1D3 /* UICollectionView+KIAdditions.h */,
+				1895C2841C851836003ED1D3 /* UICollectionView+KIAdditions.m */,
+			);
+			path = UICollectionView;
+			sourceTree = "<group>";
+		};
 		18BD6DC71BE86B9400B8CBF9 = {
 			isa = PBXGroup;
 			children = (
@@ -531,6 +544,7 @@
 				18BD6DDC1BE86B9400B8CBF9 /* ViewController.m in Sources */,
 				1827D4D41BE87995009F3B9B /* UITableViewCell+KIAdditions.m in Sources */,
 				1827D4CE1BE87995009F3B9B /* UIImage+KIAdditions.m in Sources */,
+				1895C2851C851836003ED1D3 /* UICollectionView+KIAdditions.m in Sources */,
 				1827D4D01BE87995009F3B9B /* UINavigationBar+KIAdditions.m in Sources */,
 				1827D4C61BE87995009F3B9B /* NSLayoutConstraint+KIAdditions.m in Sources */,
 				1827D4CC1BE87995009F3B9B /* UIColor+KIAdditions.m in Sources */,
