@@ -28,11 +28,7 @@
 
 - (UIImage *)flip:(BOOL)isHorizontal {
     CGRect rect = CGRectMake(0, 0, self.size.width, self.size.height);
-    if (UIGraphicsBeginImageContextWithOptions != NULL) {
-        UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
-    } else {
-        UIGraphicsBeginImageContext(rect.size);
-    }
+    UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
     CGContextRef ctx = UIGraphicsGetCurrentContext();
     CGContextClipToRect(ctx, rect);
     if (isHorizontal) {
@@ -59,11 +55,7 @@
 
 - (UIImage *)resizeToWidth:(CGFloat)width height:(CGFloat)height {
     CGSize size = CGSizeMake(width, height);
-    if (UIGraphicsBeginImageContextWithOptions != NULL) {
-        UIGraphicsBeginImageContextWithOptions(size, NO, 0);
-    } else {
-        UIGraphicsBeginImageContext(size);
-    }
+    UIGraphicsBeginImageContextWithOptions(size, NO, 0);
     [self drawInRect:CGRectMake(0, 0, width, height)];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
@@ -279,11 +271,7 @@
 
 - (UIImage *)addMark:(NSString *)mark textColor:(UIColor *)textColor font:(UIFont *)font point:(CGPoint)point {
     CGSize size = self.size;
-    if (UIGraphicsBeginImageContextWithOptions != NULL) {
-        UIGraphicsBeginImageContextWithOptions(size, NO, 0);
-    } else {
-        UIGraphicsBeginImageContext(size);
-    }
+    UIGraphicsBeginImageContextWithOptions(size, NO, 0);
     
     [self drawInRect:CGRectMake(0, 0, size.width, size.height)];
     
