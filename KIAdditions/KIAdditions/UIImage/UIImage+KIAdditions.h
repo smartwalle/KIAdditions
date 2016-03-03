@@ -13,6 +13,8 @@
 
 + (UIImage *)imageWithColor:(UIColor *)color;
 
++ (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size;
+
 /*垂直翻转*/
 - (UIImage *)flipVertical;
 
@@ -40,10 +42,6 @@
 - (UIColor *)colorAtPixel:(CGPoint)point;
 
 - (UIImage *)decoded;
-
-- (UIImage *)addMark:(NSString *)mark textColor:(UIColor *)textColor font:(UIFont *)font point:(CGPoint)point;
-
-- (UIImage *)addCreateTime;
 
 - (UIImage*)blurredImage:(CGFloat)blurAmount;
 

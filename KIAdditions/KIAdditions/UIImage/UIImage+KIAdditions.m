@@ -13,7 +13,11 @@
 @implementation UIImage (KIAdditions)
 
 + (UIImage *)imageWithColor:(UIColor *)color {
-    CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
+    return [UIImage imageWithColor:color size:CGSizeMake(1.0f, 1.0f)];
+}
+
++ (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size {
+    CGRect rect = CGRectMake(0.0f, 0.0f, size.width, size.height);
     UIGraphicsBeginImageContext(rect.size);
     CGContextRef context = UIGraphicsGetCurrentContext();
     
@@ -267,49 +271,6 @@
                                                orientation:self.imageOrientation];
     CGImageRelease(decompressedImageRef);
     return decompressedImage;
-}
-
-- (UIImage *)addMark:(NSString *)mark textColor:(UIColor *)textColor font:(UIFont *)font point:(CGPoint)point {
-    CGSize size = self.size;
-    UIGraphicsBeginImageContextWithOptions(size, NO, 0);
-    
-    [self drawInRect:CGRectMake(0, 0, size.width, size.height)];
-    
-    if (textColor == nil) {
-        textColor = [UIColor whiteColor];
-    }
-    
-    [textColor setFill];
-    
-    if (font == nil) {
-        font = [UIFont systemFontOfSize:14.0f];
-    }
-    
-    [mark drawAtPoint:point
-             forWidth:self.size.width
-             withFont:font
-        lineBreakMode:NSLineBreakByCharWrapping];
-    
-    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    return image;
-}
-
-- (UIImage *)addCreateTime {
-    NSDate *date = [NSDate date];
-    NSDateFormatter *df = [[NSDateFormatter alloc] init];
-    [df setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
-    NSString *dateString = [df stringFromDate:date];
-    
-    CGSize size = [dateString sizeWithFont:[UIFont boldSystemFontOfSize:16.0f]
-                         constrainedToSize:CGSizeMake(self.size.width, CGFLOAT_MAX)
-                             lineBreakMode:NSLineBreakByCharWrapping];
-    
-    return [self addMark:dateString
-               textColor:[UIColor blackColor]
-                    font:[UIFont boldSystemFontOfSize:16.0f]
-                   point:CGPointMake(self.size.width-size.width-10, self.size.height-size.height-10)];
-    
 }
 
 - (UIImage*)blurredImage:(CGFloat)blurAmount {
