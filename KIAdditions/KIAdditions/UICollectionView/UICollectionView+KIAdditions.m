@@ -74,5 +74,29 @@
     [self insertItemsAtIndexPaths:indexPaths];
 }
 
+- (void)removeItemAtIndexPath:(NSIndexPath *)indexPath withDataSource:(NSMutableArray *)dataSource {
+    [dataSource removeObjectAtIndex:indexPath.row];
+    [self deleteItemsAtIndexPaths:@[indexPath]];
+}
+
+- (void)removeItemsAtIndexPaths:(NSArray *)indexPaths withDataSource:(NSMutableArray *)dataSource {
+    NSArray *newIndexPaths = [indexPaths sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
+        NSIndexPath *indexPath1 = (NSIndexPath *)obj1;
+        NSIndexPath *indexPath2 = (NSIndexPath *)obj2;
+        
+        if (indexPath1.row > indexPath2.row) {
+            return NSOrderedAscending;
+        } else if (indexPath1.row < indexPath2.row) {
+            return NSOrderedDescending;
+        }
+        return NSOrderedSame;
+    }];
+    
+    for (NSIndexPath *indexPath in newIndexPaths) {
+        [dataSource removeObjectAtIndex:indexPath.row];
+    }
+    
+    [self deleteItemsAtIndexPaths:newIndexPaths];
+}
 
 @end

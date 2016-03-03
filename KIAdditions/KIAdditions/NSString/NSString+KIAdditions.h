@@ -19,19 +19,6 @@
 
 + (BOOL)isNotEmptyString:(NSString *)string;
 
-/*int to string*/
-+ (NSString *)fromInt:(int)value;
-
-+ (NSString *)fromInteger:(NSInteger)value;
-
-+ (NSString *)fromUInteger:(NSUInteger)value;
-
-+ (NSString *)fromFloat:(float)value;
-
-+ (NSString *)fromDouble:(double)value;
-
-+ (NSString *)fromBool:(BOOL)value;
-
 /*md5 加密*/
 - (NSString *)md5;
 
@@ -85,8 +72,6 @@
 /*返回其中包含的URL列表*/
 - (NSArray *)URLList;
 
-//- (BOOL)isIP;
-
 /*判断是否为手机号码*/
 - (BOOL)isCellPhoneNumber;
 
@@ -96,20 +81,7 @@
 /*判断是否为中国地区邮编*/
 - (BOOL)isZipCode;
 
-
 - (id)jsonObject:(NSError **)error;
-
-/*decimal from hex  16->10*/
-- (NSString *)getDecimalFromHex;
-
-/*hex from decimal  10->16*/
-- (NSString *)getHexFromDecimal;
-
-/*decimal from binary 2->10*/
-- (NSString *)getDecimalFromBinary;
-
-/*binary from hex* 10->2*/
-- (NSString *)getBinaryFromDecimal;
 
 /*转换为数值进行比较*/
 - (NSComparisonResult)numericCompare:(NSString *)string;

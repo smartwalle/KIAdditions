@@ -71,4 +71,19 @@
 /*编译使用的Xcode版本信息*/
 + (int)buildXcodeVersion;
 
+/*当前系统语言*/
++ (NSString *)appLanguages;
+
+/*打开一个URL*/
++ (void)openURL:(NSURL *)url;
+
+/*发送邮件*/
++ (void)sendMail:(NSString *)mail;
+
+/*发送短信*/
++ (void)sendSMS:(NSString *)number;
+
+/*打电话*/
++ (void)callNumber:(NSString *)number;
+
 @end

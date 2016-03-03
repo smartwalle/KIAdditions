@@ -45,4 +45,12 @@
     return value;
 }
 
+- (id)valueForKey:(NSString *)key defaultValue:(id)defaultValue {
+    id value = [self objectForKey:key];
+    if (value == [NSNull null] || value == nil) {
+        value = nil;
+    }
+    return value;
+}
+
 @end

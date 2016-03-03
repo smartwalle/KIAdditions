@@ -15,12 +15,6 @@
 
 @interface NSObject (KIAdditions)
 
-/*md5 加密*/
-- (NSString *)md5;
-
-/*当前系统语言*/
-- (NSString *)appleLanguages;
-
 /**************************************************
  *【NSNotificationCenter 相关】
  **************************************************/
@@ -64,14 +58,6 @@
 /*重写这个方法，用于处理键盘高度改变事件*/
 - (void)changeKeyboardHeight:(CGFloat)height animationDuration:(NSTimeInterval)duration;
 
-/**************************************************
- *【应用即将异常退出】
- **************************************************/
-- (void)observeApplicationWillTerminateNotification;
-
-- (void)unobserveApplicationWillTerminateNotification;
-
-- (void)applicationWillTerminate:(UIApplication *)application;
 
 /*判断是否为字符串*/
 - (BOOL)isString;
@@ -90,17 +76,6 @@
 /*判断是否为不为空的NSDictionary*/
 - (BOOL)isNotEmptyDictionary;
 
-/*打开一个URL*/
-- (void)openURL:(NSURL *)url;
-
-/*发送邮件*/
-- (void)sendMail:(NSString *)mail;
-
-/*发送短信*/
-- (void)sendSMS:(NSString *)number;
-
-/*打电话*/
-- (void)callNumber:(NSString *)number;
 
 /*创建一个定时器，不用的时候，需要手动释放返回的 dispatch_source_t,
  如果是arc，需要在class中保持返回的dispatch_source_对象

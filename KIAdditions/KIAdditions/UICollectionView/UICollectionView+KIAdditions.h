@@ -28,4 +28,7 @@
 - (void)addItems:(NSArray *)items beginWithIndex:(NSUInteger)index withDataSource:(NSMutableArray *)dataSource;
 - (void)addItems:(NSArray *)items beginWithIndex:(NSUInteger)index withDataSource:(NSMutableArray *)dataSource inSection:(NSInteger)seciton;
 
+- (void)removeItemAtIndexPath:(NSIndexPath *)indexPath withDataSource:(NSMutableArray *)dataSource;
+- (void)removeItemsAtIndexPaths:(NSArray *)indexPaths withDataSource:(NSMutableArray *)dataSource;
+
 @end

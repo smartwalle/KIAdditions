@@ -7,19 +7,8 @@
 //
 
 #import "NSObject+KIAdditions.h"
-#import "NSData+KIAdditions.h"
 
 @implementation NSObject (KIAdditions)
-
-/*md5 加密*/
-- (NSString *)md5 {
-    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:self];
-    return [data md5];
-}
-
-- (NSString *)appleLanguages {
-    return [[[NSUserDefaults standardUserDefaults] objectForKey:@"AppleLanguages"] objectAtIndex:0];
-}
 
 - (void)observeNotification:(NSString *)name {
     [self observeNotification:name selector:@selector(ki_handleNotification:)];
@@ -201,25 +190,6 @@
         }
     }
     return NO;
-}
-
-- (void)openURL:(NSURL *)url {
-    [[UIApplication sharedApplication] openURL:url];
-}
-
-- (void)sendMail:(NSString *)mail {
-    NSString *url = [NSString stringWithFormat:@"mailto://%@", mail];
-    [self openURL:[NSURL URLWithString:url]];
-}
-
-- (void)sendSMS:(NSString *)number {
-    NSString *url = [NSString stringWithFormat:@"sms://%@", number];
-    [self openURL:[NSURL URLWithString:url]];
-}
-
-- (void)callNumber:(NSString *)number {
-    NSString *url = [NSString stringWithFormat:@"tel://%@", number];
-    [self openURL:[NSURL URLWithString:url]];
 }
 
 - (dispatch_source_t)createTimer:(dispatch_queue_t)queue

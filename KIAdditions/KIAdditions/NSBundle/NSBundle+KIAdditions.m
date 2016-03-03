@@ -7,6 +7,7 @@
 //
 
 #import "NSBundle+KIAdditions.h"
+#import <UIKit/UIKit.h>
 
 @implementation NSBundle (KIAdditions)
 
@@ -65,6 +66,29 @@
 /*编译信息相关*/
 + (int)buildXcodeVersion {
     return [[[[NSBundle mainBundle] infoDictionary] objectForKey:@"DTXcode"] intValue];
+}
+
++ (NSString *)appLanguages {
+    return [[[NSUserDefaults standardUserDefaults] objectForKey:@"AppleLanguages"] objectAtIndex:0];
+}
+
++ (void)openURL:(NSURL *)url {
+    [[UIApplication sharedApplication] openURL:url];
+}
+
++ (void)sendMail:(NSString *)mail {
+    NSString *url = [NSString stringWithFormat:@"mailto://%@", mail];
+    [self openURL:[NSURL URLWithString:url]];
+}
+
++ (void)sendSMS:(NSString *)number {
+    NSString *url = [NSString stringWithFormat:@"sms://%@", number];
+    [self openURL:[NSURL URLWithString:url]];
+}
+
++ (void)callNumber:(NSString *)number {
+    NSString *url = [NSString stringWithFormat:@"tel://%@", number];
+    [self openURL:[NSURL URLWithString:url]];
 }
 
 @end

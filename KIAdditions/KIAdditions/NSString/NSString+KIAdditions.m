@@ -21,30 +21,6 @@
     return ![NSString isEmptyString:string];
 }
 
-+ (NSString *)fromInt:(int)value {
-	return [NSString stringWithFormat:@"%d", value];
-}
-
-+ (NSString *)fromInteger:(NSInteger)value {
-	return [NSString stringWithFormat:@"%ld", (long)value];
-}
-
-+ (NSString *)fromUInteger:(NSUInteger)value {
-	return [NSString stringWithFormat:@"%lu", (unsigned long)value];
-}
-
-+ (NSString *)fromFloat:(float)value {
-	return [NSString stringWithFormat:@"%f", value];
-}
-
-+ (NSString *)fromDouble:(double)value {
-	return [NSString stringWithFormat:@"%f", value];
-}
-
-+ (NSString *)fromBool:(BOOL)value {
-	return [NSString stringWithFormat:@"%d", value];
-}
-
 - (NSString *)md5 {
     if (!self) {
         return nil;
@@ -209,14 +185,8 @@
     return URLs;
 }
 
-//- (BOOL)isIP {
-//    NSString *ipRegex = @"((^1([0-9]\\d{0,2}))|(^2([0-5\\d{0,2}])))";
-//    NSPredicate *ipTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", ipRegex];
-//    return [ipTest evaluateWithObject:self];
-//}
-
 - (BOOL)isCellPhoneNumber {
-    NSString *cellPhoneRegEx = @"^1(3[0-9]|4[0-9]|5[0-9]|8[0-9])\\d{8}$";
+    NSString *cellPhoneRegEx = @"^1(3[0-9]|4[0-9]|5[0-9]|7[0-9]|8[0-9])\\d{8}$";
     NSPredicate *cellPhoneTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", cellPhoneRegEx];
     return [cellPhoneTest evaluateWithObject:self];
 }
@@ -239,59 +209,6 @@
                                              error:error];
 }
 
-- (NSString *)getDecimalFromHex {
-    int sum = 0;
-    for (int i = 0; i < self.length; i++) {
-        sum *= 16;
-        char c = [self characterAtIndex:i] ;
-        if (c >= 'A') {
-            sum += c - 'A' + 10;
-        }else{
-            sum += c - '0';
-        }
-    }
-    return [NSString stringWithFormat:@"%d",sum];
-}
-
-- (NSString *)getHexFromDecimal {
-    int num = [self intValue];
-    NSMutableString * result = [[NSMutableString alloc] init];
-    while (num > 0) {
-        int a = num % 16;
-        char c;
-        if (a > 9) {
-            c = 'A' + (a - 10);
-        }else{
-            c = '0' + a;
-        }
-        NSString * reminder = [NSString stringWithFormat:@"%c",c];
-        [result insertString:reminder atIndex:0];
-        num = num / 16;
-    }
-    return result;
-}
-
-- (NSString *)getDecimalFromBinary {
-    int sum = 0;
-    for (int i = 0; i < self.length; i++) {
-        sum *= 2;
-        char c = [self characterAtIndex:i];
-        sum += c - '0';
-    }
-    return [NSString stringWithFormat:@"%d",sum];
-}
-
-- (NSString *)getBinaryFromDecimal {
-    int num = [self intValue];
-    NSMutableString * result = [[NSMutableString alloc] init];
-    while (num > 0) {
-        NSString * reminder = [NSString stringWithFormat:@"%d",num % 2];
-        [result insertString:reminder atIndex:0];
-        num = num / 2;
-    }
-    return result;
-}
-
 - (NSComparisonResult)numericCompare:(NSString *)string {
     NSString *leftString = self;
     NSString *rightString = string;
@@ -307,9 +224,6 @@
         } else {
             return NSOrderedDescending;
         }
-        
-        leftString = [leftString substringFromIndex:[leftScanner scanLocation]];
-        rightString = [rightString substringFromIndex:[rightScanner scanLocation]];
     }
     return [leftString caseInsensitiveCompare:rightString];
 }
@@ -329,9 +243,6 @@
         } else {
             return NSOrderedDescending;
         }
-        
-        leftString = [leftString substringFromIndex:[leftScanner scanLocation]];
-        rightString = [rightString substringFromIndex:[rightScanner scanLocation]];
     }
     return [leftString caseInsensitiveCompare:rightString];
 }

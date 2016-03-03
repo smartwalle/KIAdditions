@@ -22,4 +22,6 @@
 
 - (NSString *)stringValueForKey:(id)key;
 
+- (id)valueForKey:(NSString *)key defaultValue:(id)defaultValue;
+
 @end
