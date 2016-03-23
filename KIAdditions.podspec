@@ -81,7 +81,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'UIImage' do |ss|
-    ss.source_files  = "KIAdditions/KIAdditions/UIImage/UIImage+KIAdditions.{h,m}"
+    ss.source_files  = "KIAdditions/KIAdditions/UIImage/*.{h,m}"
     ss.frameworks    = "UIKit", "Accelerate", "QuartzCore"
   end
 
