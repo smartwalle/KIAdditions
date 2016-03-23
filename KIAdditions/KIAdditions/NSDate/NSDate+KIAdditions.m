@@ -496,8 +496,8 @@
                                     |NSHourCalendarUnit
                                     |NSMinuteCalendarUnit
                                     |NSDayCalendarUnit
-                                    |NSMonthCalendarUnit
-                                    |NSYearCalendarUnit
+  //                                  |NSMonthCalendarUnit
+  //                                  |NSYearCalendarUnit
                                                fromDate:self
                                                  toDate:[NSDate date]
                                                 options:0];
