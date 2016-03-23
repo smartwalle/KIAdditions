@@ -14,11 +14,15 @@
     CIImage *image = [CIImage imageWithCGImage:self.CGImage];
     CIFilter *filter = [CIFilter filterWithName:filterName keysAndValues:kCIInputImageKey, image, nil];
     [filter setDefaults];
-    CIContext *context = [CIContext contextWithOptions:nil];
     CIImage *outputImage = [filter outputImage];
-    CGImageRef imageRef = [context createCGImage:outputImage fromRect:[outputImage extent]];
-    UIImage *result = [UIImage imageWithCGImage:imageRef];
-    CGImageRelease(imageRef);
+    
+//    CIContext *context = [CIContext contextWithOptions:nil];
+//    CGImageRef imageRef = [context createCGImage:outputImage fromRect:[outputImage extent]];
+//    UIImage *result = [UIImage imageWithCGImage:imageRef];
+//    CGImageRelease(imageRef);
+    
+    UIImage *result = [UIImage imageWithCIImage:outputImage];
+    
     return result;
 }
 
