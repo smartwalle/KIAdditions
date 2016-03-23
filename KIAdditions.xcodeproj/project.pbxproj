@@ -37,6 +37,9 @@
 		18BD6DE11BE86B9400B8CBF9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18BD6DE01BE86B9400B8CBF9 /* Images.xcassets */; };
 		18BD6DE41BE86B9400B8CBF9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18BD6DE21BE86B9400B8CBF9 /* LaunchScreen.xib */; };
 		18BD6DF01BE86B9400B8CBF9 /* KIAdditionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD6DEF1BE86B9400B8CBF9 /* KIAdditionsTests.m */; };
+		18DAD8421CA14809007AA8A5 /* iOS.png in Resources */ = {isa = PBXBuildFile; fileRef = 18DAD8411CA14809007AA8A5 /* iOS.png */; };
+		18DAD8451CA149B6007AA8A5 /* UIImage+KIBitmap.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DAD8441CA149B6007AA8A5 /* UIImage+KIBitmap.m */; };
+		18DAD8481CA14C85007AA8A5 /* UIImage+KIFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DAD8471CA14C85007AA8A5 /* UIImage+KIFilter.m */; };
 		18F873A41C3D0C3800AC9C6B /* UICollectionViewCell+KIAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F873A31C3D0C3800AC9C6B /* UICollectionViewCell+KIAdditions.m */; };
 /* End PBXBuildFile section */
 
@@ -110,6 +113,11 @@
 		18BD6DE91BE86B9400B8CBF9 /* KIAdditionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KIAdditionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18BD6DEE1BE86B9400B8CBF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18BD6DEF1BE86B9400B8CBF9 /* KIAdditionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIAdditionsTests.m; sourceTree = "<group>"; };
+		18DAD8411CA14809007AA8A5 /* iOS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iOS.png; path = ../../../iOS.png; sourceTree = "<group>"; };
+		18DAD8431CA149B6007AA8A5 /* UIImage+KIBitmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+KIBitmap.h"; sourceTree = "<group>"; };
+		18DAD8441CA149B6007AA8A5 /* UIImage+KIBitmap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+KIBitmap.m"; sourceTree = "<group>"; };
+		18DAD8461CA14C85007AA8A5 /* UIImage+KIFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+KIFilter.h"; sourceTree = "<group>"; };
+		18DAD8471CA14C85007AA8A5 /* UIImage+KIFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+KIFilter.m"; sourceTree = "<group>"; };
 		18F873A21C3D0C3800AC9C6B /* UICollectionViewCell+KIAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+KIAdditions.h"; sourceTree = "<group>"; };
 		18F873A31C3D0C3800AC9C6B /* UICollectionViewCell+KIAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+KIAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -285,6 +293,10 @@
 			children = (
 				1827D4A11BE87995009F3B9B /* UIImage+KIAdditions.h */,
 				1827D4A21BE87995009F3B9B /* UIImage+KIAdditions.m */,
+				18DAD8431CA149B6007AA8A5 /* UIImage+KIBitmap.h */,
+				18DAD8441CA149B6007AA8A5 /* UIImage+KIBitmap.m */,
+				18DAD8461CA14C85007AA8A5 /* UIImage+KIFilter.h */,
+				18DAD8471CA14C85007AA8A5 /* UIImage+KIFilter.m */,
 			);
 			path = UIImage;
 			sourceTree = "<group>";
@@ -394,6 +406,7 @@
 				1827D4781BE87995009F3B9B /* KIAdditions */,
 				18BD6DD71BE86B9400B8CBF9 /* AppDelegate.h */,
 				18BD6DD81BE86B9400B8CBF9 /* AppDelegate.m */,
+				18DAD8411CA14809007AA8A5 /* iOS.png */,
 				18BD6DDA1BE86B9400B8CBF9 /* ViewController.h */,
 				18BD6DDB1BE86B9400B8CBF9 /* ViewController.m */,
 				18BD6DDD1BE86B9400B8CBF9 /* Main.storyboard */,
@@ -520,6 +533,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18BD6DDF1BE86B9400B8CBF9 /* Main.storyboard in Resources */,
+				18DAD8421CA14809007AA8A5 /* iOS.png in Resources */,
 				18BD6DE41BE86B9400B8CBF9 /* LaunchScreen.xib in Resources */,
 				18BD6DE11BE86B9400B8CBF9 /* Images.xcassets in Resources */,
 			);
@@ -557,6 +571,7 @@
 				1827D4D81BE87995009F3B9B /* UIViewController+KIAdditions.m in Sources */,
 				1827D4D11BE87995009F3B9B /* UINavigationController+KIAdditions.m in Sources */,
 				1827D4C21BE87995009F3B9B /* NSData+KIAdditions.m in Sources */,
+				18DAD8451CA149B6007AA8A5 /* UIImage+KIBitmap.m in Sources */,
 				1827D4C91BE87995009F3B9B /* NSString+KIAdditions.m in Sources */,
 				1827D4C81BE87995009F3B9B /* NSObject+KIAdditions.m in Sources */,
 				1827D4CA1BE87995009F3B9B /* NSUserDefaults+KIAdditions.m in Sources */,
@@ -566,6 +581,7 @@
 				1827D4C11BE87995009F3B9B /* NSBundle+KIAdditions.m in Sources */,
 				18BD6DD61BE86B9400B8CBF9 /* main.m in Sources */,
 				1827D4D31BE87995009F3B9B /* UITableView+KIAdditions.m in Sources */,
+				18DAD8481CA14C85007AA8A5 /* UIImage+KIFilter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

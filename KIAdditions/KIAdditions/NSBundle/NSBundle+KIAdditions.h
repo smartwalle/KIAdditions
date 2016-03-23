@@ -37,6 +37,12 @@
 #define KIDirectoryBaseCaches(fileName)      [KI_CACHES_DIRECTORY stringByAppendingPathComponent:fileName]
 #define KIDirectoryBaseTmp(fileName)         [KI_TEMP_DIRECTORY stringByAppendingPathComponent:fileName]
 
+/*根据提供的 file name 返回其路径*/
+#define KIPathBaseDocument(fileName)    [KI_DOCUMENT_DIRECTORY stringByAppendingPathComponent:fileName]
+#define KIPathBaseLibrary(fileName)     [KI_LIBRARY_DIRECTORY stringByAppendingPathComponent:fileName]
+#define KIPathBaseCaches(fileName)      [KI_CACHES_DIRECTORY stringByAppendingPathComponent:fileName]
+#define KIPathBaseTmp(fileName)         [KI_TEMP_DIRECTORY stringByAppendingPathComponent:fileName]
+
 
 /*文件缓存目录*/
 #define KICachePath(path) [KIDirectoryBaseCaches(@"KICache") stringByAppendingPathComponent:path]
