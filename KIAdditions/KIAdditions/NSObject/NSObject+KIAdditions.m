@@ -147,51 +147,6 @@
     
 }
 
-- (BOOL)isString {
-    if ([self isKindOfClass:[NSString class]]) {
-        return YES;
-    }
-    return NO;
-}
-
-- (BOOL)isArray {
-    if ([self isKindOfClass:[NSArray class]]) {
-        return YES;
-    }
-    return NO;
-}
-
-- (BOOL)isEmptyArray {
-    if (self != nil && [self isArray] && [(NSArray *)self count] > 0) {
-        return NO;
-    }
-    return YES;
-}
-
-- (BOOL)isNotEmptyArray {
-    if (self != nil && [self isArray] && [(NSArray *)self count] > 0) {
-        return YES;
-    }
-    return NO;
-}
-
-- (BOOL)isDictionary {
-    if ([self isKindOfClass:[NSDictionary class]]) {
-        return YES;
-    }
-    return NO;
-}
-
-- (BOOL)isNotEmptyDictionary {
-    if ([self isDictionary]) {
-        NSDictionary *tempDict = (NSDictionary *)self;
-        if ([tempDict count] > 0) {
-            return YES;
-        }
-    }
-    return NO;
-}
-
 - (dispatch_source_t)createTimer:(dispatch_queue_t)queue
                         interval:(int)interval
                            block:(void(^)(NSUInteger count))block {

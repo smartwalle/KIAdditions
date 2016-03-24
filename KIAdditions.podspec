@@ -20,6 +20,10 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
+  s.subspec 'NSArray' do |ss|
+    ss.source_files  = "KIAdditions/KIAdditions/NSArray/*.{h,m}"
+  end
+
   s.subspec 'NSBundle' do |ss|
     ss.source_files  = "KIAdditions/KIAdditions/NSBundle/*.{h,m}"
   end

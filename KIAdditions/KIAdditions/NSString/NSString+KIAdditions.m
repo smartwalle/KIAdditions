@@ -248,3 +248,14 @@
 }
 
 @end
+
+@implementation NSObject (String)
+
+- (BOOL)isString {
+    if ([self isKindOfClass:[NSString class]]) {
+        return YES;
+    }
+    return NO;
+}
+
+@end

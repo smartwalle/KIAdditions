@@ -54,3 +54,24 @@
 }
 
 @end
+
+@implementation NSObject (Dictionary)
+
+- (BOOL)isDictionary {
+    if ([self isKindOfClass:[NSDictionary class]]) {
+        return YES;
+    }
+    return NO;
+}
+
+- (BOOL)isNotEmptyDictionary {
+    if ([self isDictionary]) {
+        NSDictionary *tempDict = (NSDictionary *)self;
+        if ([tempDict count] > 0) {
+            return YES;
+        }
+    }
+    return NO;
+}
+
+@end

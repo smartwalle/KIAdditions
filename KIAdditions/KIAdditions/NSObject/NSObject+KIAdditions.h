@@ -13,6 +13,14 @@
 
 #define KIWeakSelf(weakSelf)  __weak __typeof(&*self)weakSelf = self;
 
+#ifdef DEBUG
+    #define KILog(xxx, ...)     NSLog(xxx, ##__VA_ARGS__)
+    #define KILogV(xxx, ...)    NSLog(@"%s(%d): " xxx, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+#else
+    #define KILog(xxx, ...)
+    #define KILogV(xxx, ...)
+#endif
+
 @interface NSObject (KIAdditions)
 
 /**************************************************
@@ -57,24 +65,6 @@
 
 /*重写这个方法，用于处理键盘高度改变事件*/
 - (void)changeKeyboardHeight:(CGFloat)height animationDuration:(NSTimeInterval)duration;
-
-
-/*判断是否为字符串*/
-- (BOOL)isString;
-
-/*判断是否为NSArray*/
-- (BOOL)isArray;
-
-/*判断是否为不为空的NSArray*/
-- (BOOL)isEmptyArray;
-
-- (BOOL)isNotEmptyArray;
-
-/*判断是否为NSDictionary*/
-- (BOOL)isDictionary;
-
-/*判断是否为不为空的NSDictionary*/
-- (BOOL)isNotEmptyDictionary;
 
 
 /*创建一个定时器，不用的时候，需要手动释放返回的 dispatch_source_t,

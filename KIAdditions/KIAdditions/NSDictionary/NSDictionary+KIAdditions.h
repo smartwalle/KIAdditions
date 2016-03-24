@@ -25,3 +25,14 @@
 - (id)valueForKey:(NSString *)key defaultValue:(id)defaultValue;
 
 @end
+
+
+@interface NSObject (Dictionary)
+
+/*判断是否为NSDictionary*/
+- (BOOL)isDictionary;
+
+/*判断是否为不为空的NSDictionary*/
+- (BOOL)isNotEmptyDictionary;
+
+@end

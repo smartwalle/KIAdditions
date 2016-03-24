@@ -88,3 +88,10 @@
 - (NSComparisonResult)floatCompare:(NSString *)string;
 
 @end
+
+@interface NSObject (String)
+
+/*判断是否为字符串*/
+- (BOOL)isString;
+
+@end
