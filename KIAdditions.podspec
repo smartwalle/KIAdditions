@@ -12,8 +12,8 @@ Pod::Spec.new do |s|
   s.author       = { "SmartWalle" => "smartwalle@gmail.com" }
   s.platform     = :ios
   s.source       = { :git => "https://github.com/smartwalle/KIAdditions.git", :tag => "#{s.version}", :submodules => true }
-  s.source_files  = "KIAdditions/KIAdditions/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+#  s.source_files  = "KIAdditions/KIAdditions/*.{h,m}"
+#  s.exclude_files = "Classes/Exclude"
 
   # s.framework  = "SomeFramework"
   # s.frameworks = "SomeFramework", "AnotherFramework"
