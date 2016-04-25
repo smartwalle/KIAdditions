@@ -19,26 +19,6 @@
 
 + (BOOL)isNotEmptyString:(NSString *)string;
 
-/*md5 加密*/
-- (NSString *)md5;
-
-/*sha1 加密*/
-- (NSString *)sha1;
-
-- (NSData *)hmacsha1WithSecret:(NSString *)secret;
-
-/*base64 加密*/
-- (NSString *)base64Encoded;
-
-/*base64 加密*/
-- (NSString *)base64Decoded;
-
-/*URLEncoded*/
-- (NSString *)URLEncodedString;
-
-/*URLDecoded*/
-- (NSString *)URLDecodedString;
-
 /*判断是否为空或者nil*/
 - (BOOL)isNotEmptyString;
 

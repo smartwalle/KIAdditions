@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "KIAdditions"
-  s.version      = "0.0.4"
+  s.version      = "0.0.1"
   s.summary      = "KIAdditions"
 
   s.description  = <<-DESC
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author       = { "SmartWalle" => "smartwalle@gmail.com" }
   s.platform     = :ios
-  s.source       = { :git => "https://github.com/smartwalle/KIAdditions.git", :branch => "master", :submodules => true }
+  s.source       = { :git => "https://github.com/smartwalle/KIAdditions.git", :tag => "#{s.version}", :submodules => true }
   s.source_files  = "KIAdditions/KIAdditions/*.{h,m}"
   s.exclude_files = "Classes/Exclude"
 
