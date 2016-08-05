@@ -12,4 +12,8 @@
 
 - (void)setBarShadowImage:(UIImage *)image;
 
+- (void)setHeight:(CGFloat)height;
+
+- (CGFloat)height;
+
 @end

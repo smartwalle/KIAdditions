@@ -8,6 +8,9 @@
 
 #import "UINavigationBar+KIAdditions.h"
 #import "UIDevice+KIAdditions.h"
+#import "objc/runtime.h"
+
+static char KI_NAVIGATION_BAR_HEIGHT;
 
 @implementation UINavigationBar (KIAdditions)
 
@@ -28,6 +31,30 @@
                                         image.size.height)];
         [shadowView setBackgroundColor:[UIColor colorWithPatternImage:image]];
     }
+}
+
+- (void)setHeight:(CGFloat)height {
+    objc_setAssociatedObject(self, &KI_NAVIGATION_BAR_HEIGHT, @(height), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+- (CGFloat)height {
+    NSNumber *h = objc_getAssociatedObject(self, &KI_NAVIGATION_BAR_HEIGHT);
+    if (h) {
+        return [h floatValue];
+    }
+    return CGRectGetHeight(self.frame);
+}
+
+- (CGSize)sizeThatFits:(CGSize)size {
+    CGSize newSize;
+    NSNumber *h = objc_getAssociatedObject(self, &KI_NAVIGATION_BAR_HEIGHT);
+    if (h) {
+        newSize = CGSizeMake(CGRectGetWidth(self.frame), [h floatValue]);
+    } else {
+        newSize = [super sizeThatFits:size];
+    }
+    
+    return newSize;
 }
 
 @end
