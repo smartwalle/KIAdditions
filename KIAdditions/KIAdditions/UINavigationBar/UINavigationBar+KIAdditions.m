@@ -7,7 +7,6 @@
 //
 
 #import "UINavigationBar+KIAdditions.h"
-#import "UIDevice+KIAdditions.h"
 #import "objc/runtime.h"
 
 static char KI_NAVIGATION_BAR_HEIGHT;
@@ -15,7 +14,7 @@ static char KI_NAVIGATION_BAR_HEIGHT;
 @implementation UINavigationBar (KIAdditions)
 
 - (void)setBarShadowImage:(UIImage *)image {
-    if (KI_IOS_6_OR_LATER) {
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 6.0) {
         [self setShadowImage:image];
     } else {
         static int SHADOW_IMAGE_VIEW_TAG = 979797;
