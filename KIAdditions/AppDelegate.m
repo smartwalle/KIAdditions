@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "NSString+KIAdditions.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +17,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    NSLog(@"%@", [@"Aaa a   " trimWhitespace]);
     return YES;
 }
 
