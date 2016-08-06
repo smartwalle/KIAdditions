@@ -7,6 +7,8 @@
 //
 
 #import "NSString+KIAdditions.h"
+#import <CommonCrypto/CommonDigest.h>
+#import <CommonCrypto/CommonHMAC.h>
 
 @implementation NSString (KIAdditions)
 

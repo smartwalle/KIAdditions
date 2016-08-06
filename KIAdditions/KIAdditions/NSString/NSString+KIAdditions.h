@@ -7,9 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <CommonCrypto/CommonDigest.h>
-#include <CommonCrypto/CommonHMAC.h>
-#import "NSData+KIAdditions.h"
 
 #define KIString(xxx, ...) [NSString stringWithFormat:xxx, ##__VA_ARGS__]
 
