@@ -62,7 +62,6 @@ Pod::Spec.new do |s|
 
   s.subspec 'NSString' do |ss|
     ss.source_files  = "KIAdditions/KIAdditions/NSString/NSString+KIAdditions.{h,m}"
-    ss.library       = 'CommonCrypto'
   end
 
   s.subspec 'NSUserDefaults' do |ss|
