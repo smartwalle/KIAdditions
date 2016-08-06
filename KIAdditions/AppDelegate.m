@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "NSString+KIAdditions.h"
 
 @interface AppDelegate ()
 
@@ -17,12 +16,6 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    NSLog(@"%@   %@", [@"aaaa" base64Encoded], [@"aaaa" URLEncodedString]);
-    NSLog(@"%@", [@"YWFhYQ==" base64Decoded]);
-    
-    [[NSData new] base64EncodedStringWithOptions:0];
-    
     return YES;
 }
 
