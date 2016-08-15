@@ -68,7 +68,7 @@
 }
 
 - (void)close {
-    if (self.presentedViewController != nil) {
+    if (self.presentingViewController != nil) {
        [self dismissModalViewController];
     } else {
         [self popViewController];
