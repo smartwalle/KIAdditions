@@ -7,10 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "UIImage+KIBitmap.h"
-#import "UIImage+KIAdditions.h"
-#import "NSBundle+KIAdditions.h"
-#import "UIImage+KIFilter.h"
 
 @interface ViewController ()
 
