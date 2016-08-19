@@ -162,7 +162,7 @@ static char *KI_SEARCH_BAR_CONTEXT_VIEW_KEY = "KI_SEARCH_BAR_CONTEXT_VIEW_KEY";
     CGRect contextViewFrame = [self contextViewFrameWithKeyboardHeight:0];
     [[self _contextView] setFrame:contextViewFrame];
     [[self _contextView] setAlpha:0.0f];
-    [self.window addSubview:[self _contextView]];
+    [[self mainView] addSubview:[self _contextView]];
     
     [UIView animateKeyframesWithDuration:0.2
                                    delay:0
@@ -238,22 +238,22 @@ static char *KI_SEARCH_BAR_CONTEXT_VIEW_KEY = "KI_SEARCH_BAR_CONTEXT_VIEW_KEY";
 }
 
 #pragma mark - Getters & Setters
-- (UIWindow *)window {
+- (UIView *)mainView {
     return [[UIApplication sharedApplication] keyWindow];
 }
 
 - (CGRect)contextViewFrameWithKeyboardHeight:(CGFloat)height {
-    CGRect windowBounds = self.window.bounds;
-    CGRect rect = [self rectToWindow];
+    CGRect mainViewBounds = [self mainView].bounds;
+    CGRect rect = [self rectToMainView];
     CGRect contextViewFrame = CGRectMake(CGRectGetMinX(rect),
                                          CGRectGetMaxY(rect),
                                          CGRectGetWidth(rect),
-                                         CGRectGetHeight(windowBounds) - CGRectGetMaxY(rect) - height);
+                                         CGRectGetHeight(mainViewBounds) - CGRectGetMaxY(rect) - height);
     return contextViewFrame;
 }
 
-- (CGRect)rectToWindow {
-    CGRect rect = [self.superview convertRect:self.frame toView:self.window];
+- (CGRect)rectToMainView {
+    CGRect rect = [self.superview convertRect:self.frame toView:[self mainView]];
     return rect;
 }
 
