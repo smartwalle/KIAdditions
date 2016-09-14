@@ -23,7 +23,7 @@
         image = [self resizeTo:CGSizeMake(image.size.width / factor, image.size.height / factor)];
     }
     
-    CGFloat compression = 0.99f;
+    CGFloat compression = 1.0f;
     NSData *imageData = UIImageJPEGRepresentation(image, compression);
     while (imageData.length > maxSize && compression > minCompression) {
         compression -= 0.1f;
