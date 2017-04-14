@@ -266,7 +266,7 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         if ([self isPhone]) {
-            if ([[UIScreen mainScreen] bounds].size.height < 568.0f) {
+            if ([[UIScreen mainScreen] bounds].size.height * [[UIScreen mainScreen] bounds].size.width == 320.0f * 480.0f) {
                 isPhone4 = YES;
             }
         }
@@ -279,7 +279,7 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         if ([self isPhone]) {
-            if ([[UIScreen mainScreen] bounds].size.height == 568.0f) {
+            if ([[UIScreen mainScreen] bounds].size.height * [[UIScreen mainScreen] bounds].size.width == 320.0f * 568.0f) {
                 isPhone5 = YES;
             }
         }
@@ -294,10 +294,10 @@
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= 80000
         if ([self isPhone]) {
             if ([[UIScreen mainScreen] respondsToSelector:@selector(nativeBounds)]) {
-                if (([[UIScreen mainScreen] nativeBounds].size.height/[[UIScreen mainScreen] nativeScale]) == 667.0f) {
+                if ((([[UIScreen mainScreen] nativeBounds].size.height * [[UIScreen mainScreen] nativeBounds].size.width) / [[UIScreen mainScreen] nativeScale]) == 375.0f * 667.0f) {
                     isPhone6 = YES;
                 }
-            } else if ([[UIScreen mainScreen] bounds].size.height == 667.0f) {
+            } else if ([[UIScreen mainScreen] bounds].size.height * [[UIScreen mainScreen] bounds].size.width == 375.0f * 667.0f) {
                 isPhone6 = YES;
             }
         }
@@ -313,10 +313,10 @@
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= 80000
         if ([self isPhone]) {
             if ([[UIScreen mainScreen] respondsToSelector:@selector(nativeBounds)]) {
-                if (([[UIScreen mainScreen] nativeBounds].size.height/[[UIScreen mainScreen] nativeScale]) == 736.0f) {
+                if ((([[UIScreen mainScreen] nativeBounds].size.height * [[UIScreen mainScreen] nativeBounds].size.width) / [[UIScreen mainScreen] nativeScale]) == 414.0f * 736.0f) {
                     isPhone6p = YES;
                 }
-            } else if ([[UIScreen mainScreen] bounds].size.height == 736.0f) {
+            } else if ([[UIScreen mainScreen] bounds].size.height * [[UIScreen mainScreen] bounds].size.width == 414.0f * 736.0f) {
                 isPhone6p = YES;
             }
         }
